@@ -59,3 +59,19 @@ article {
 .image img{
     width: 200px;
 }
+#print{
+    display: none;
+}
+@media print{
+    .pub {
+        display: none;
+    }
+    .image{
+        position:absolute;
+        top: 400px;
+        left: 675px;
+    }
+    #print{
+        display: block;
+    }
+}
